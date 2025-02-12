@@ -1,0 +1,294 @@
+/* Import google fonts     */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3 ease;
+}
+
+
+:root {
+
+    --white: #fff;
+    --black: #24292d;
+    --nav-main: #4070f4;
+    --switchers-main: #0b3cc1;
+    --light-bg: #F0F8FF;
+
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+    width: 100%;
+    background: var(--nav-main);
+}
+
+nav .navbar {
+    height: 100%;
+    display: flex;
+    max-width: 1300px;
+    align-items: center;
+    margin: auto;
+    padding: 0 30px;
+
+    justify-content: space-between;
+
+}
+
+.navbar a {
+
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--white);
+    text-decoration: none;
+
+}
+
+.navbar .nav-link {
+
+    display: flex;
+
+}
+
+.navbar .nav-link li {
+
+    list-style: none;
+    margin: 0 8px;
+
+}
+
+.navbar .nav-link li a {
+
+    font-size: 19px;
+    font-weight: 400;
+    opacity: 0.9;
+
+}
+
+.navbar .nav-link li a:hover {
+
+    opacity: 1;
+
+}
+
+.navbar .apperance {
+
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.apperance .light-darker,
+.apperance .colour-icons .icons {
+
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: var(--white);
+    margin: 0 10px;
+    border-radius: 6px;
+    font-size: 20px;
+    background: var(--switchers-main);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+
+.apperance .colour-icons {
+
+    position: relative;
+
+}
+
+.apperance .colour-icons .icons {
+
+    width: 70px;
+
+}
+
+.apperance .light-darker:hover,
+.apperance .colour-icons .icons {
+
+    opacity: 1;
+
+}
+
+.apperance .colour-icons .colour-box {
+
+    padding: 16px 20px 20px 20px;
+    border-radius: 6px;
+    position: absolute;
+    bottom: -133px;
+    right: 0;
+    min-height: 100px;
+    background: var(--white);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.colour-icons.open .colour-box {
+
+opacity: 1;
+pointer-events: auto;
+
+}
+
+.colour-icons.open .arrow {
+
+transform: rotate(-180deg);
+
+}
+
+.colour-icons .colour-box::before {
+
+    content: '';
+    position: absolute;
+    height: 30px;
+    top: -10px;
+    width: 30px;
+    background: var(--white);
+    border-radius: 50%;
+    right: 20px;
+}
+
+.colour-icons .colour-box h3 {
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.colour-box .colour-switcher {
+
+    display: flex;
+
+}
+
+.colour-box .colour-switcher .btn {
+
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: var(--nav-main);
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.colour-switcher .btn.blue {
+    background: #4070f4;
+}
+
+.colour-switcher .btn.blue.active {
+    box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px #4070F4;
+}
+
+.colour-switcher .btn.orange {
+    background: #F79F1F;
+}
+
+.colour-switcher .btn.orange.active {
+    box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px #F79F1F;
+}
+
+.colour-switcher .btn.purple {
+    background: #8e44ad;
+}
+
+.colour-switcher .btn.purple.active {
+    box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px #8e44Ad;
+}
+
+.colour-switcher .btn.green {
+    background: #3A9943;
+}
+
+.colour-switcher .btn.green.active {
+    box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px #3A9943;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: var(--light-bg);
+    padding: 0 60px;
+}
+
+.home-content h2 {
+
+    font-size: 40px;
+    color: var(--black);
+}
+
+.home-content h3 {
+
+    font-size: 35px;
+    color: var(--black);  
+}
+
+.home-content h3 span.darkMode {
+    color: var(--black);
+}
+
+.home-content h3 span {
+    color: var(--nav-main);
+}
+
+.home-content p {
+
+font-size: 14px;
+width: 40%;
+margin-bottom: 30px;
+color: var(--black);
+}
+
+.home-content a {
+
+color: var(--white);
+font-size: 20px;
+background: var(--nav-main);
+text-decoration: none;
+padding: 12px;
+border-radius: 10px;
+}
+
+.home-content a:hover{
+    background: var(--switchers-main);
+}
+
+.home-content a i {
+    transform: rotate(45deg);
+}
+
+
+@media (max-width:1100px) {
+
+    .home-content p {
+        width: 70%;
+}
+}

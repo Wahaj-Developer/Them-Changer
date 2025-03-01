@@ -1,1 +1,7 @@
-# Them-Changer
+Creating a website theme changer with color options like blue, yellow, and purple, along with a night mode feature, is an exciting <br>project that combines HTML, CSS, and JavaScript. This project allows users to dynamically switch between different themes, enhancing <br>the user experience by offering customization options.<br>
+<br>
+Using HTML, I structured the webpage with buttons for each theme (blue, yellow, purple) and a toggle for night mode. CSS was used to <br>define the styles for each theme, including background colors, text colors, and other visual elements. JavaScript plays a crucial <br>role in handling user interactions. When a user clicks a button, JavaScript updates the CSS classes or inline styles to apply the <br>selected theme. For example, clicking the "blue" button changes the background to blue and adjusts text colors for readability.<br>
+<br>
+The night mode feature is implemented similarly. When activated, it applies a dark color scheme, reducing eye strain in low-light <br>environments. This is achieved by toggling a "night mode" class that overrides default styles with darker colors.<br>
+<br>
+Overall, this project demonstrates the power of combining HTML, CSS, and JavaScript to create interactive and user-friendly web <br>experiences. It’s a great way to learn about DOM manipulation, event handling, and responsive design while providing practical <br>functionality for users.<br>
